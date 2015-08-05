@@ -12,3 +12,19 @@
 # should include the sea creatures, the second, land animals.
 
 # Read the test suite for an example of a nested array.
+
+class AnimalSorter
+
+	# attribute_accessor :animals
+
+	SEA_ANIMALS = ["marlin", "octopus", "fish"] 
+	LAND_ANIMALS = ["aardvark", "cat", "elephant"]
+
+	def initialize(animals)
+		@animals = animals 
+	end
+
+	def to_a
+		sea_and_land = [SEA_ANIMALS, LAND_ANIMALS]
+	end
+end
