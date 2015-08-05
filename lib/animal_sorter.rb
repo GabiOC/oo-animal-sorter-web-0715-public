@@ -25,6 +25,6 @@ class AnimalSorter
 	end
 
 	def to_a
-		sea_and_land = [SEA_ANIMALS, LAND_ANIMALS]
+		[ @animals.select { |a| SEA_ANIMALS.include?(a) }, @animals.select { |b| LAND_ANIMALS.include?(b)}]
 	end
 end
